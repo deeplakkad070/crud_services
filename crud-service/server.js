@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {   
-  res.json({ message: "Welcome to Crud application." });
+  res.json({ message: "Welcome to Crud service application." });
 });
 
 app.use("/dev", router);
@@ -22,3 +22,4 @@ app.listen(8080, () => {
 
 
 export default app;
+
