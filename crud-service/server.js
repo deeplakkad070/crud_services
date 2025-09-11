@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {   
-  res.json({ message: "Welcome to Deep application." });
+  res.json({ message: "Welcome to Crud application." });
 });
 
 app.use("/dev", router);
@@ -18,6 +18,7 @@ app.use(errorHandler);
 app.listen(8080, () => {
   console.log(`Server is running on port 8080.`);
 });
+
 
 
 export default app;
